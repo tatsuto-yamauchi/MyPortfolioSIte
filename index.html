@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 検索にヒットしないようにするための記述 (制作途中の時など) -->
+    <meta name="robots" content="noindex" />
+    
+    <title>Tatsuto Yamauchi - Portfolio</title>
+    <!-- サイトの概要を記述します (googleの検索時で表示される) -->
+    <meta name="description" content="Tatuto Yamauchi's portfolio" />
+    <link rel="icon" href="./img/favicon.png">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- slider(swiper) -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <p class="header-title"><a href="">Tatsuto Yamauchi</a></p>
+            <button type="button" class="header_icon drawer-icon" id="js-drawer-icon">
+                <span class="drawer-icon_bar"></span>
+                <span class="drawer-icon_bar"></span>
+                <span class="drawer-icon_bar"></span>
+            </button>
+            <nav class="header_nav" id="js-drawer-content">
+                <ul class="header_lists">
+                    <li class="header_list" ><button type="button" class="header_link" id="js-nav-icon0">HOME</button></li>
+                    <!-- <li class="header_list" id="js-drawer-icon"><a href="#about" class="header_link">ABOUT</a></li> -->
+                    <li class="header_list" ><button type="button" class="header_link" id="js-nav-icon">ABOUT</button></li>
+                    <!-- <li class="header_list "><a href="#contact" class="header_link">CONTACT</a></li> -->
+                    <li class="header_list" ><button type="button" class="header_link" id="js-nav-icon2">CONTACT</button></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="portfolio">
+            <div class="portfolio_inner">
+                <!-- Sliderを包むコンテナ要素 -->
+                <div class="swiper">
+                    <!-- スライド要素を包む要素 -->
+                    <div class="swiper-wrapper">
+                        <!-- 各スライド -->
+                        <div class="swiper-slide">
+                            <p class="slide-title">Cornel box</p>
+                            <div class="zoom-box">
+                                <a href="https://tatsuto-yamauchi.github.io/portfolio_Cornel-box/" class="slider_img"><img src="./img/cornel_box_shadow.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="slide-title">Image processing</p>
+                            <div class="zoom-box">
+                                <a href="https://tatsuto-yamauchi.github.io/portfolio_Image-processing/" class="slider_img"><img src="./img/image_processing_shadow.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="slide-title">VR experiment with GCP</p>
+                            <div class="zoom-box">
+                                <a href="https://github.com/tatsuto-yamauchi/VR-Experiment-with-GCP-Project" class="slider_img"><img src="./img/VR_Project.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <!-- sp時 -->
+                <div class="works">
+                    <div class="work-sp">
+                        <p class="work-title">Cornel box</p>
+                        <a href="https://tatsuto-yamauchi.github.io/portfolio_Cornel-box/" class="work_img"><img src="./img/cornel_box_shadow.png" alt=""></a>
+                    </div>
+                    <div class="work-sp">
+                        <p class="work-title">Image processing</p>
+                        <a href="https://tatsuto-yamauchi.github.io/portfolio_Image-processing/" class="work_img"><img src="./img/image_processing_shadow.png" alt=""></a>
+                    </div>
+                    <div class="work-sp">
+                        <p class="work-title">VR experiment with GCP</p>
+                        <a href="https://github.com/tatsuto-yamauchi/VR-Experiment-with-GCP-Project" class="work_img"><img src="./img/VR_Project.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about" id="js-nav-content">
+            <div class="about_inner">
+                <p class="about_title">ABOUT</p>
+                <p class="about_text">
+                    ご覧いただきありがとうございます．山内達登と申します．<br>
+                    大学院生をしております．<br>
+                    このサイトは, 自身の勉強のアウトプットも兼ねたプロフィールサイトになります．<br>
+                    <br>
+                    2022年に豊橋技術科学大学大学院 知能情報学専攻に入学．<br>
+                    <br>
+                    同年9月, EUの教育機関が提供する複数の国の大学院から修士号の学位をもらう留学プログラムErasmus Mundus Joint Maters (IMLEX)に参加．
+                    1年間，フィンランドとフランスでコンピュータービジョンや機械学習, ディープラーニングについて学ぶ．<br>
+                    2024年9月卒業予定
+                </p>
+                <p class="about_skill">Skills</p>
+                <div class="skills">
+                    <p class="skill">Python</p>
+                    <p class="skill">MATLAB</p>
+                </div>
+                <div class="skills">
+                    <p class="skill">HTML/CSS</p>
+                    <p class="skill">PHP</p>
+                </div>
+                <div class="skills">
+                    <p class="skill">JavaScript</p>
+                    <p class="skill">jQuery</p>
+                </div>
+                <div class="skills">
+                    <p class="skill">Three.js</p>
+                    <p class="skill">Git</p>
+                </div>
+                <div class="skills">
+                    <p class="skill">AWS</p>
+                    <p class="skill">GCP</p>
+                </div>
+                <div class="skills">
+                    <p class="skill">ROS</p>
+                    <p class="skill">Unity</p>
+                </div>
+                <div class="skills">
+                    <p class="skill">SQL</p>
+                    <p class="skill">WordPress</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- contact -->
+        <section class="contact" id="js-nav-content2">
+            <div class="contact_inner">
+                <p class="contact_title">CONTACT</p>
+                <div class="contact-contents">
+                    <p class="contact_text">Email:</p>
+                    <p class="contact-address">yamauchi.tatsuto.aw@tut.jp</p>
+                </div>
+                <div class="contact-contents">
+                    <p class="contact_text">GitHub:</p>
+                    <a href="https://github.com/tatsuto-yamauchi" class="contact-link"><p class="contact-address contact-url">URL</p></a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
